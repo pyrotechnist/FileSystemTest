@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.longyuan.filesystemtest.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textFromFile"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Input something"/>
+
+
+        <EditText
+           android:maxLines="1"
+            android:layout_weight="1"
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+      <LinearLayout
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal">
+
+          <Button
+              android:layout_weight="1"
+              android:text="Save to Internal"
+              android:id="@+id/save_internal"
+              android:onClick="saveToInternal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+          <Button
+              android:layout_weight="1"
+              android:text="Save to External"
+              android:id="@+id/save_external"
+              android:onClick="saveToExternal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+
+
+      </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_weight="1"
+                android:text="load from Internal"
+                android:id="@+id/load_internal"
+                android:onClick="loadFromInternal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_weight="1"
+                android:text="load from External"
+                android:id="@+id/load_external"
+                android:onClick="loadFromExternal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
